@@ -49,8 +49,8 @@ A modern, responsive frontend built using **Vite**, **React**, **TypeScript**, *
 ### 1️⃣ Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/engineering-resource-management-frontend.git
-cd engineering-resource-management-frontend
+git clone https://github.com/yourusername/engineering-resource-management-frontend.git](https://github.com/Aman-Thakur002/geekyant-frontend
+cd geeky_ants_frontend
 ```
 
 ### 2️⃣ Install Dependencies
@@ -68,7 +68,7 @@ cp .env.example .env
 Update `VITE_API_URL` in `.env` to your backend URL:
 
 ```env
-VITE_API_URL=http://localhost:3000/api
+VITE_API_URL=http://localhost:4100/api
 ```
 
 ### 4️⃣ Run Development Server
@@ -124,6 +124,24 @@ npm run preview
 
 ---
 
+## 🧠 Productivity with Cursor IDE
+
+During development, I leveraged **[Cursor](https://www.cursor.so)** — an AI-powered code editor — to significantly enhance productivity and improve code quality:
+
+### 🛠️ Fixing UI Bugs & Errors
+Cursor's inline AI suggestions helped quickly identify component-level issues, Tailwind class conflicts, and conditional rendering bugs that would otherwise take time to debug manually.
+
+### 🔄 Code Refactoring & Cleanup
+Using Cursor, I was able to refactor repetitive code into clean, reusable components and hooks. It assisted in improving performance and readability by optimizing form logic, validation, and state handling.
+
+### 💡 Suggesting Better Approaches
+Cursor provided alternative methods for handling form validation (Zod), better UI layout strategies using Radix primitives, and more efficient use of custom hooks and context.
+
+### 🧪 Testing & Debug Flow
+While testing interactions, Cursor helped simulate edge cases in the UI logic and provided inline fixes — reducing the time spent switching between docs and the editor.
+
+---
+
 ## 🔧 Development Guidelines
 
 - Use TypeScript for all components and utilities
@@ -134,30 +152,10 @@ npm run preview
 
 ---
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 🧑‍💻 Author
 
 **Engineering Resource Manager**
-- Frontend by [Your Name]
-- Challenge by GeekyAnts
+- Frontend by Aman Singh
 
 ---
-
-## 📞 Support
-
-If you have any questions or need help with setup, please open an issue in the GitHub repository.
