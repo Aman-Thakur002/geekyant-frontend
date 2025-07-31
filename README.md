@@ -1,6 +1,10 @@
 # 🚀 Engineering Resource Management – Frontend
 
 A modern, responsive frontend built using **Vite**, **React**, **TypeScript**, **TailwindCSS**, and **Radix UI** to manage engineering resources across multiple projects. This app provides an intuitive interface for managers and engineers to collaborate effectively.
+## 🌐 Live Demo
+
+Check out the live app here: 👉 [https://geekyant.vercel.app/login](https://geekyant.vercel.app/login)
+
 
 ---
 
