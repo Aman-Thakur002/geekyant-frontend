@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(220, 13%, 18%);
+  --muted: hsl(220, 14%, 96%);
+  --muted-foreground: hsl(220, 9%, 46%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(220, 13%, 18%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(220, 13%, 18%);
+  --border: hsl(220, 13%, 91%);
+  --input: hsl(220, 13%, 91%);
+  --primary: hsl(220, 13%, 28%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(220, 14%, 96%);
+  --secondary-foreground: hsl(220, 13%, 18%);
+  --accent: hsl(158, 64%, 52%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(220, 13%, 28%);
+  --radius: 0.5rem;
+  
+  /* Custom colors for ERMS */
+  --primary-dark: hsl(220, 13%, 18%);
+  --secondary-gray: hsl(220, 9%, 46%);
+  --success: hsl(158, 64%, 52%);
+  --warning: hsl(43, 96%, 56%);
+  --error: hsl(0, 84%, 60%);
+  --gray-50: hsl(220, 14%, 98%);
+  --gray-100: hsl(220, 14%, 96%);
+  --gray-200: hsl(220, 13%, 91%);
+  --gray-300: hsl(220, 9%, 78%);
+  --gray-400: hsl(220, 9%, 64%);
+  --gray-500: hsl(220, 9%, 46%);
+  --gray-600: hsl(220, 13%, 28%);
+  --gray-700: hsl(220, 13%, 18%);
+  --gray-800: hsl(220, 13%, 13%);
+  --gray-900: hsl(220, 13%, 9%);
+}
+
+.dark {
+  --background: hsl(220, 13%, 9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(220, 13%, 13%);
+  --muted-foreground: hsl(220, 9%, 64%);
+  --popover: hsl(220, 13%, 9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(220, 13%, 9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(220, 13%, 18%);
+  --input: hsl(220, 13%, 18%);
+  --primary: hsl(0, 0%, 98%);
+  --primary-foreground: hsl(220, 13%, 9%);
+  --secondary: hsl(220, 13%, 13%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(158, 64%, 52%);
+  --accent-foreground: hsl(220, 13%, 9%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(0, 0%, 98%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes */
+.capacity-bar {
+  @apply rounded-full transition-all duration-300;
+}
+
+.capacity-bar.overloaded {
+  @apply bg-red-500;
+}
+
+.capacity-bar.optimal {
+  @apply bg-yellow-500;
+}
+
+.capacity-bar.available {
+  @apply bg-green-500;
+}
+
+.skill-tag {
+  @apply px-2 py-1 text-xs rounded-md font-medium;
+}
+
+.skill-tag.react {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.skill-tag.nodejs {
+  @apply bg-green-100 text-green-800;
+}
+
+.skill-tag.typescript {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.skill-tag.python {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.skill-tag.mongodb {
+  @apply bg-green-100 text-green-800;
+}
+
+.skill-tag.default {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.status-badge {
+  @apply px-2 py-1 text-xs font-medium rounded-full;
+}
+
+.status-badge.active {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-badge.planning {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.status-badge.completed {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.status-badge.overloaded {
+  @apply text-red-800;
+}
+
+.status-badge.optimal {
+  @apply text-yellow-800;
+}
+
+.status-badge.available {
+  @apply text-green-800;
+}
